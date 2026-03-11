@@ -23,7 +23,7 @@ Console.WriteLine(tuple1 != tuple2);
 Console.WriteLine();
 Console.WriteLine("3. 타입 호환성 - 기본");
 
-var tuple4 = ("Alice",25);
+var tuple4 = ("Alice", 25);
 (string, int) tuple5 = tuple4;
 
 Console.WriteLine($"{tuple5.Item1}, {tuple5.Item2}");
@@ -75,7 +75,7 @@ Console.WriteLine(dict[(0, 1)]);
 Console.WriteLine();
 Console.WriteLine("7. System.Tuple 클래스");
 
-Tuple<string,int> oldTuple1 = new Tuple<string, int>("Bob", 23);
+Tuple<string, int> oldTuple1 = new Tuple<string, int>("Bob", 23);
 var oldTuple2 = Tuple.Create("Alice", 25);
 
 Console.WriteLine($"{oldTuple1.Item1}, {oldTuple1.Item2}");

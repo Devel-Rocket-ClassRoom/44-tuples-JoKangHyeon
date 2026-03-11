@@ -1,6 +1,4 @@
 using System;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices.Marshalling;
 
 Console.WriteLine();
 Console.WriteLine("1. 기본 튜플 반환");
@@ -17,7 +15,7 @@ Console.WriteLine("2. 반환 튜플에 이름 지정");
 
 (int Sum, int Count) Calculate() => (45, 6);
 
-var c= Calculate();
+var c = Calculate();
 Console.WriteLine($"합계: {c.Item1}, 개수: {c.Item2}");
 
 
@@ -39,10 +37,10 @@ Console.WriteLine("4. 최솟값과 최댓값 반환");
     int minValue = int.MaxValue;
     int maxValue = int.MinValue;
 
-    foreach(int num in nums)
+    foreach (int num in nums)
     {
-        if(num<minValue) minValue = num; 
-        if(num>maxValue) maxValue = num;
+        if (num < minValue) minValue = num;
+        if (num > maxValue) maxValue = num;
     }
 
     return (minValue, maxValue);
@@ -93,5 +91,5 @@ Console.WriteLine();
 Console.WriteLine("9. 무시 패턴 (_)");
 
 var tuple3 = ("Bob", 23, 'M');
-(_, age,_) = tuple3;
+(_, age, _) = tuple3;
 Console.WriteLine($"나이: {age}");

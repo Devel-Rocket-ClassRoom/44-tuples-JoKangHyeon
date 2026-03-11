@@ -45,7 +45,7 @@ AddItem(inventory, "해독제", 2, 300);
 AddItem(inventory, "엘릭서", 1, 5000);
 
 Console.WriteLine("=== 아이템 인벤토리 ===");
-foreach(var item in inventory)
+foreach (var item in inventory)
 {
     Console.WriteLine($"{item.name} - 수량: {item.quantity}개, 단가: {item.price}원");
 }

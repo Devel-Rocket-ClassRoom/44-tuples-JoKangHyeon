@@ -1,5 +1,4 @@
 using System;
-using System.Net.Cache;
 
 Console.WriteLine();
 Console.WriteLine("## 1. 튜플 리터럴");
